@@ -1,0 +1,1 @@
+This is my first live app that I'm coding using JavaScript PERN stack. It's a Harry Potter codex of spells and potions. Thank you for reading this, have a nice day!

@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "hp codex site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "harry",
+    "potter",
+    "hp",
+    "spells",
+    "potions",
+    "codex"
+  ],
+  "author": "floating vertex",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
