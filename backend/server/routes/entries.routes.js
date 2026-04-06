@@ -1,7 +1,9 @@
 import { Router } from "express";
-import { getEntires } from "../controllers/entries.controller.js";
+import { getEntries, getFilteredList, getSearch } from "../controllers/entries.controller.js";
 
 const router = Router();
-router.get('/', getEntires);
+router.get('/', getEntries);
+router.get('/category/:category', getFilteredList);
+router.get('/search/:search', getSearch);
 
 export default router
