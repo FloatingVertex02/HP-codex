@@ -42,15 +42,15 @@ function SpellsPage() {
     <>
       <HStack>
         <Text>Filter spells by type:</Text>
-        <Button onClick={handleShowAll}>All Spells</Button>
-        <Button onClick={() => handleFilteredList("charm")}>Charms</Button>
-        <Button onClick={() => handleFilteredList("conjuration")}>Conjuration</Button>
-        <Button onClick={() => handleFilteredList("curse")}>Curse</Button>
-        <Button onClick={() => handleFilteredList("transfiguration")}>Transfiguration</Button>
+        <Button backgroundColor="#4b2e19" onClick={handleShowAll}>All Spells</Button>
+        <Button backgroundColor="#4b2e19" onClick={() => handleFilteredList("charm")}>Charms</Button>
+        <Button backgroundColor="#4b2e19" onClick={() => handleFilteredList("conjuration")}>Conjuration</Button>
+        <Button backgroundColor="#4b2e19" onClick={() => handleFilteredList("curse")}>Curse</Button>
+        <Button backgroundColor="#4b2e19" onClick={() => handleFilteredList("transfiguration")}>Transfiguration</Button>
       </HStack>
       <HStack>
-        <Input width='300px' placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-        <Button onClick={handleSearchList}>Search</Button>
+        <Input width='300px' borderColor="#d6c3a1" placeholder='Search' value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <Button backgroundColor="#d6c3a1" onClick={handleSearchList}>Search</Button>
       </HStack>
       <Text>
         <EntriesList entries={entries}/>

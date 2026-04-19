@@ -27,7 +27,7 @@ function SpellDetailPage() {
     if (!entry) {
         return (
             <VStack>
-                <Link to="/"><Button>Back to spell list</Button></Link>
+                <Link to="/"><Button backgroundColor="#4b2e19">Back to spell list</Button></Link>
                 <Text>Loading spell...</Text>
             </VStack>
         );
@@ -35,7 +35,7 @@ function SpellDetailPage() {
 
     return (
         <VStack>
-            <Link to="/"><Button>Back to spell list</Button></Link>
+            <Link to="/"><Button backgroundColor="#4b2e19">Back to spell list</Button></Link>
             <Heading>{entry.name}</Heading>
             <HStack>
                 <Text>Description: {entry.description}</Text>
