@@ -4,7 +4,7 @@ import router from "../routes/entries.routes.js";
 
 const app = express();
 
-app.use(cors({origin: "http://localhost:5173"}))
+app.use(cors({origin: [ "http://localhost:5173", "https://hp-codex.vercel.app" ] }))
 app.use(express.json());
 
 
