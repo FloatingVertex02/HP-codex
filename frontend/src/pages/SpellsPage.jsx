@@ -23,19 +23,19 @@ function SpellsPage() {
     };
   
   useEffect(() => {
-    fetchEntries("http://localhost:4000/v1/entries")
+    fetchEntries(`${import.meta.env.VITE_API_URL}/v1/entries`)
   }, []);
 
   const handleFilteredList = (category) => {
-    fetchEntries(`http://localhost:4000/v1/entries/category/${category}`)
+    fetchEntries(`${import.meta.env.VITE_API_URL}/v1/entries/category/${category}`)
   };
 
   const handleShowAll = () => {
-    fetchEntries("http://localhost:4000/v1/entries")
+    fetchEntries(`${import.meta.env.VITE_API_URL}/v1/entries`)
   };
 
   const handleSearchList = () => {
-    fetchEntries(`http://localhost:4000/v1/entries/search/${searchTerm}`)
+    fetchEntries(`${import.meta.env.VITE_API_URL}/v1/entries/search/${searchTerm}`)
   };
 
   return (

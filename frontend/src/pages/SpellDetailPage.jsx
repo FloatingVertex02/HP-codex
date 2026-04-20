@@ -9,7 +9,7 @@ function SpellDetailPage() {
     useEffect(() => {
         const fetchEntry = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/v1/entries/${id}`)
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/v1/entries/${id}`)
 
                 if (!response.ok) {
                     throw new Error("Failed to fetch entry")
