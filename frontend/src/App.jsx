@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Provider>
-      <Theme appearance="light" bg="#f7f1e3" minH="100vh">
+      <Theme appearance="light" bg="#f7f1e3">
         <VStack>
           <Heading color="#4b2e19" size="6xl" margin="20px">Harry Potter Spells & Potions</Heading>
           <Outlet />

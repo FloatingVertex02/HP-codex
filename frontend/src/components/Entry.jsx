@@ -23,7 +23,7 @@ function Entry({ entry }) {
         <Link to={`/spells/${entry.id}`} >
             <Card.Root bg="#f7f1e3" borderColor="#d6c3a1">
                 <Card.Body>
-                    <HStack align="start" justify="space-between" width="600px">
+                    <HStack align="start" justify="space-between">
 
                         <Box>
                             <Card.Title color="#4b2e19">{entry.name}</Card.Title>
